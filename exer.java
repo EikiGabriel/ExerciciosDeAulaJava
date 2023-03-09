@@ -207,8 +207,42 @@ public class exer {
 	    System.out.print("O calculo deu:");
 	    System.out.print(D);    
 	*/
+
+    /*
+    public static void main(String[] args) {
+		
+		Scanner leia = new Scanner(System.in);
+		
+        System.out.println("Qual a quantidade de alunos do sexo masculino tem na turma?");
+	    int M = leia.nextInt();
+
+	    System.out.println("Qual a quantidade de alunos do sexo feminino tem na turma?");
+	    int F = leia.nextInt();
+
+	    System.out.println("Qual a quantidade de alunos aprovados? ");
+	    int aprov = leia.nextInt();
 	
-	*/
+        System.out.print("O total de alunos na turma é: ");
+        System.out.println(M + F);
+
+        System.out.print("A porcentagem de alunos homens na sala é: ");
+        System.out.print((M * 100)/(M + F));
+        System.out.println("%");
+
+        System.out.print("A porcentagem de alunas mulheres na sala é: ");
+        System.out.print((F * 100)/(M + F));
+        System.out.println("%");
+
+        System.out.print("E ");
+        System.out.print((aprov * 100)/(M + F));
+        System.out.print("%");
+        System.out.print(" dos alunos foram Aporvados");
+
+	}
+    */
+
+
+	/* 
 	public static void main(String[] args) {
 		
 		Scanner leia = new Scanner(System.in);
@@ -233,7 +267,36 @@ public class exer {
 	
 	}
 	*/
-	
-}
 
-   
+    /*
+    public static void main(String[] args) {
+		
+		Scanner leia = new Scanner(System.in);
+		
+		System.out.println("Qual o numero de vitorias do seu time?");
+	    int v = leia.nextInt();
+
+	    System.out.println("Qual o numero de derrotas do seu time?");
+	    int d = leia.nextInt();
+
+        System.out.println("Qual o numero de empates do seu time?");
+	    int e = leia.nextInt();
+
+        int total = v+d+e;
+
+
+        System.out.print("O numero total de jogos jogados foi: ");
+        System.out.println(total);
+
+        System.out.print("Os pontos concorridos foram: ");
+        System.out.println(total * 3);
+
+        System.out.print("E os pontos ganhos pelo seu time foi: ");
+        System.out.println((v * 3) + e);
+
+	
+    }
+
+*/
+
+}
