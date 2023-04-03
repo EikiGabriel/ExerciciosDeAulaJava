@@ -1,4 +1,4 @@
-package POO2;
+package faculdade_exercicios_java;
 
 import java.util.Scanner;
 
