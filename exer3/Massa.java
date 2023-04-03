@@ -5,9 +5,24 @@ public class Massa {
     private float massaFinal;
     private int tempo;
 
+    public Massa(float mi) {
+        this.massaInicial = mi;
+    }
+
+
 
     public void calculaTempo(){
-        return;
+        float calculoMassa = this.getMassaInicial();
+        while(true){
+            if(calculoMassa < 0.5){
+                this.setMassaFinal(calculoMassa);
+                return;
+            }else{
+                calculoMassa = calculoMassa /2;
+                this.setTempo(tempo+50);
+            }
+        }
+        
     }
 
 

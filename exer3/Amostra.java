@@ -15,12 +15,23 @@ public class Amostra {
 
 
     public int informaGrau(){
-
-
-
-
-
-        
+        int test1=0, test2=0, test3=0;
+        if(this.getConteudoCarbono() <= 7){
+           test1++;
+        }if(this.getDurezaRokwell() > 50){
+            test2++;
+        }if(this.getResistenciaTracao() > 80){
+            test3++;
+        }if(test1 == 1 && test2 == 1 && test3 == 1){
+            return 10;
+        }if(test1 == 1 && test2 == 1 && test3 == 0){
+            return 9;
+        }if(test1 == 1 && test2 == 0 && test3 == 0){
+            return 8;
+        }if(test1 == 1 && test2 == 0 && test3 == 1 || test1 == 1 && test2 == 1 && test3 == 0 || test1 == 0 && test2 == 1 && test3 == 1 || test1 == 0 && test2 == 1 && test3 == 0 || test1 == 0 && test2 == 0 && test3 == 1 || test1 == 0 && test2 == 0 && test3 == 0 ){
+            return 7;
+        }
+        System.out.println("Erro ao analisar");
         return 0;
     }
  

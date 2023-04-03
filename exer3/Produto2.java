@@ -7,10 +7,24 @@ public class Produto2 {
     private float pontoY2;
 
 
-    public float calculaDistancia(){
-        return 0;
+    public Produto2(float pontoX1, float pontoX2, float pontoY1, float pontoY2) {
+        this.pontoX1 = pontoX1;
+        this.pontoX2 = pontoX2;
+        this.pontoY1 = pontoY1;
+        this.pontoY2 = pontoY2;
     }
 
+
+    public float calculaDistancia(){
+        float X1 = this.getPontoX1();
+        float X2 = this.getPontoX2();
+        float Y1 = this.getPontoY1();
+        float Y2 = this.getPontoY2();
+
+        float result = Math.sqrt((X2 - X1) * (X2 - X1) + (Y2 - Y1) * (Y2 - Y1));
+        return result;
+    }
+    ///Raiz ((X2 – X1) * (X2 – X1) + (Y2 – Y1) * (Y2 –Y1))
 
     public float getPontoX1() {
         return pontoX1;
