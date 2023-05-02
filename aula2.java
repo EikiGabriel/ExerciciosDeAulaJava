@@ -1,5 +1,4 @@
 package faculdade_exercicios_java;
-
 import java.util.Scanner;
 
 public class aula2 {
